@@ -22,7 +22,7 @@ void Pokemon::scream(){
 }
 
 void Pokemon::displayInfo(){
-    std::cout << "*** Pokemon #" << id << " : " << name << ", hitPoint : "
+    std::cout << "*** Pokemon N°" << id << ", Nom : " << name << ", hitPoint : "
     << hitPoint << std::endl;
 }
 
@@ -43,6 +43,17 @@ void Pokemon::attack(Pokemon &anotherPokemon) {
 int Pokemon::getNumberOfPokemon() {
     return numberOfPokemon;
 }
+
+std::string Pokemon::getName() const
+{
+    return name;
+}
+
+int Pokemon::getId() const 
+{
+    return id;
+}
+
 
 void Pokemon::sustainDamage(int value) {
     hitPoint=(hitPoint-value)>0?hitPoint-value:0;

@@ -20,6 +20,10 @@ public:
     Pokemon() = delete;
     Pokemon(const string &name, int id, double hitPoint, double attack, double defense, int generation);
     Pokemon(const Pokemon& anotherPokemon);
+
+    std::string getName() const;
+    int getId() const;
+
     void attack(Pokemon& anotherPokemon);
     void scream();
     void displayInfo();
