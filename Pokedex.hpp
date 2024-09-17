@@ -9,11 +9,11 @@ class Pokedex:public SetOfPokemon
 {
     private:
     static Pokedex* instance;
-    Pokedex(std::string fileName);
+    
 
     public:
     static Pokedex* getInstance(std::string fileName);
-    // Pokedex(string name);
+    Pokedex(std::string fileName);
     Pokemon* getOnePokemonByName(string name);
     Pokemon* getOnePokemonById(int id);
 

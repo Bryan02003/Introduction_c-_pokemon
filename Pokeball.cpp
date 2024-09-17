@@ -30,7 +30,7 @@ Pokemon* Pokeball::libere()
 
 bool Pokeball::hasPokemon() const
 {
-    return pokemon != nullptr;
+    return capturePokemon != nullptr;
 }
 
 Pokeball::~Pokeball() 
